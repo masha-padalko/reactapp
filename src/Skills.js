@@ -23,16 +23,18 @@ class Skills extends Component {
       <section id="skills">
         <div className="center-container">
         	<h2>Skills</h2>
-        	<div>
+        	<table>
+          
 			    {this.state.skills.map((skill, index) => (
-			    			<div>
-					        	<p key={index}>{skill.name}</p>
-							    <Skill value={skill.level}/>
-					        </div>
+			    			<tr>
+					        <td key={index}>{skill.name}</td>
+							    <td  key={index}><Skill value={skill.level}/></td>
+					        </tr>
 			        	)
 			    	)
 				}
-			</div>
+
+			</table>
         </div>
       </section> 
     );
@@ -47,9 +49,9 @@ class Skill extends React.Component {
   render() {
     var classes = new Array(10).fill('active')
       .map( (className, i) => (i<this.props.value) ? className : '');
-    console.log(classes, this.props.value);
+
     var items = classes
-      .map( (className, i) => (<li key={i} className={className}><a href="#">{className}</a></li>));
+      .map( (className, i) => (<li key={i} className={className}></li>));
 
     return (
       <ul>
