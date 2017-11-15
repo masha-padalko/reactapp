@@ -27,7 +27,7 @@ class Skills extends Component {
 			    {this.state.skills.map((skill, index) => (
 			    			<div>
 					        	<p key={index}>{skill.name}</p>
-							    <SkillLevel value={skill.level}/>
+							    <Skill value={skill.level}/>
 					        </div>
 			        	)
 			    	)
@@ -39,23 +39,24 @@ class Skills extends Component {
   }
 }
 
-class SkillLevel extends Component {
+class Skill extends React.Component {
+  constructor() {
+    super();
+  }
+  
+  render() {
+    var classes = new Array(10).fill('active')
+      .map( (className, i) => (i<this.props.value) ? className : '');
+    console.log(classes, this.props.value);
+    var items = classes
+      .map( (className, i) => (<li key={i} className={className}><a href="#">{className}</a></li>));
 
-	constructor(props) {
-
-	    super(props);
-
-		const items = new Array(10).fill('active')
-
-	    this.state = { items };
-	}
-
-    render() {
-       	this.state.items.map( (className, i) => (i<this.props.value) ? className : '')
-		  .map(className => `<li class="${className}"><a href="#"></a></li>` )
-		  .join('')
-    	return this.state.items
-    }
+    return (
+      <ul>
+        {items}
+      </ul>
+    );
+  }
 }
 
 export default Skills;
