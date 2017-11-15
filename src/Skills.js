@@ -20,19 +20,42 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="section" id="skills">
+      <section id="skills">
         <div className="center-container">
         	<h2>Skills</h2>
         	<div>
 			    {this.state.skills.map((skill, index) => (
-			        	<p key={index}>{skill.name}</p>)
+			    			<div>
+					        	<p key={index}>{skill.name}</p>
+							    <SkillLevel value={skill.level}/>
+					        </div>
+			        	)
 			    	)
 				}
-			    </div>
+			</div>
         </div>
-      </div> 
+      </section> 
     );
   }
+}
+
+class SkillLevel extends Component {
+
+	constructor(props) {
+
+	    super(props);
+
+		const items = new Array(10).fill('active')
+
+	    this.state = { items };
+	}
+
+    render() {
+       	this.state.items.map( (className, i) => (i<this.props.value) ? className : '')
+		  .map(className => `<li class="${className}"><a href="#"></a></li>` )
+		  .join('')
+    	return this.state.items
+    }
 }
 
 export default Skills;

@@ -27,16 +27,16 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="section" id="contact">
+      <section id="contact">
         <div className="center-container">
         	<h2>Contact</h2>
         	<form onSubmit={this.handleSubmit}>
-        		<input type="text" name="name" value={this.state.name} onChange={this.handleNameChange}/>
-        		<input type="text" name="email" value={this.state.email} onChange={this.handleEmailChange}/>
-        		<input type="submit" value="Submit"/>
+        		<input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.handleNameChange}/>
+        		<input type="text" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange}/>
+        		<input className="contact-send" type="submit" value="Send"/>
         	</form>
         </div>
-      </div> 
+      </section> 
     );
   }
 }
