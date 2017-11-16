@@ -1,10 +1,9 @@
 {
-  "main.js": "static/js/main.d2a38a9f.js",
-  "main.js.map": "static/js/main.d2a38a9f.js.map",
-  "static/media/About.sass": "static/media/About.576ab912.sass",
-  "static/media/Contact.sass": "static/media/Contact.455095e7.sass",
-  "static/media/Footer.sass": "static/media/Footer.b1af0e4b.sass",
-  "static/media/Header.sass": "static/media/Header.15b566f4.sass",
-  "static/media/Skills.sass": "static/media/Skills.eb823f13.sass",
-  "static/media/index.sass": "static/media/index.4c34d69b.sass"
+  "main.js": "static/js/main.f35e934e.js",
+  "main.js.map": "static/js/main.f35e934e.js.map",
+  "static/media/header-bg.png": "static/media/header-bg.8702a58c.png",
+  "static/media/icomoon.eot?n7koiu": "static/media/icomoon.5a624502.eot",
+  "static/media/icomoon.svg?n7koiu": "static/media/icomoon.3bce60d6.svg",
+  "static/media/icomoon.ttf?n7koiu": "static/media/icomoon.076b3da3.ttf",
+  "static/media/icomoon.woff?n7koiu": "static/media/icomoon.311968b0.woff"
 }
