@@ -11,8 +11,8 @@ class Header extends Component {
 	        	<ul>
 	        		<li><a className="active" href="#">Home</a></li>
 	        		<li><a href="#about">About</a></li>
-	        		<li><a href="#about">Skills</a></li>
-	        		<li><a href="#about">Contact</a></li>
+	        		<li><a href="#skills">Skills</a></li>
+	        		<li><a href="#contact">Contact</a></li>
 	        	</ul>
 	        </nav>
       	</div>
