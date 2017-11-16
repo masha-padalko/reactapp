@@ -1,3 +1,6 @@
+@import "node_modules/bootstrap-sass-grid/sass/bootstrap-sass-grid.scss"
+@import "/variables.sass"
+
 *
 	margin: 0
 	padding: 0
@@ -39,16 +42,8 @@ h2
 	text-transform: uppercase
 	letter-spacing: .75px
 
-.center-container
-	max-width: 920px
-	margin: 0 auto
-	padding: 0 30px
-
-	&:after
-		@extend section:after
-
 section
-	border-bottom: 1px solid #cccccc
+	border-bottom: 1px solid $primary-grey-color
 	padding-top: 35px
 	padding-bottom: 65px
 
@@ -62,3 +57,6 @@ section
 
 	&:last-child
 		border-bottom: none
+
+.text-right
+	text-align: right

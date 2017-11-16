@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header>
       	<div className="header">
-			<a href="#" className="header-logo"></a>
+			  <a href="#" className="header-logo"></a>
 	        <nav>
 	        	<ul>
 	        		<li><a className="active" href="#">Home</a></li>
