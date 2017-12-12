@@ -9,9 +9,9 @@ class Footer extends Component {
           <div className="row">
               <div className="col-md-6 footer-contacts">
                 <ul>
-                  <li><span>Mobile:</span>  +38066-66-66-666</li>
-                  <li><span>Email:</span>   mail@gmail.com</li>
-                  <li><span>Skype:</span>   mySkypeAcc</li>
+                  <li><span>Facebook:</span><a href="https://www.facebook.com/maria.padalko">http://github.com/masha-padalko/</a></li>
+                  <li><span>Linkedin:</span><a href="http://linkedin.com/in/mariya-padalko-15992b82">http://linkedin.com/in/mariya-padalko-15992b82</a></li>
+                  <li><span>GitHub:</span><a href="http://github.com/masha-padalko/">http://github.com/masha-padalko/</a></li>
                 </ul>
                
                 

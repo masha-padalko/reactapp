@@ -38,16 +38,16 @@ class Contact extends Component {
         	<div className="row">
         		<div className="col-md-5 col-sm-5">
         			<div className="contact-item">
-        				<span className="contact-item-name">Phone number:</span>
-        				<span className="contact-item-val">+38066-66-66-666</span>
+        				<span className="contact-item-name">Mobile number:</span>
+        				<span className="contact-item-val">+38 (050) 918 72 23</span>
         			</div>
         			<div className="contact-item">
         				<span className="contact-item-name">Email:</span>
-        				<span className="contact-item-val">mail@gmail.com</span>
+        				<span className="contact-item-val">masha.padalko@gmail.com</span>
         			</div>
         			<div className="contact-item">
         				<span className="contact-item-name">Skype:</span>
-        				<span className="contact-item-val">mySkypeAcc</span>
+        				<span className="contact-item-val">padalko4</span>
         			</div>
         		</div>
         		<div className="col-md-7 col-sm-7">
